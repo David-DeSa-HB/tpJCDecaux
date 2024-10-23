@@ -4,7 +4,7 @@ body {
 }
 html,
 body {
-    min-height: 100svh;
+    min-height: 95svh;
 }
 main {
     /* height: fit-content; */
