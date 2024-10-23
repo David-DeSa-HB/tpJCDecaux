@@ -1,0 +1,100 @@
+[
+    {
+        "number": 2010,
+        "name": "2010 - CONFLUENCE / DARSE",
+        "address": "ANGLE ALLEE ANDRE MURE ET QUAI ANTOINE RIBOUD",
+        "latitude": 45.743317,
+        "longitude": 4.815747
+    },
+    {
+        "number": 5015,
+        "name": "5015 - FULCHIRON",
+        "address": "Devant le n°41 rue de la Quarantaine",
+        "latitude": 45.75197,
+        "longitude": 4.821662
+    },
+    {
+        "number": 32001,
+        "name": "32001 - COUZON - CENTRE",
+        "address": "",
+        "latitude": 45.846034,
+        "longitude": 4.832409
+    },
+    {
+        "number": 6004,
+        "name": "6004 - FOCH",
+        "address": "Angle rue Vendôme",
+        "latitude": 45.768896,
+        "longitude": 4.844845
+    },
+    {
+        "number": 7035,
+        "name": "7035 - MARSEILLE / UNIVERSITÉ",
+        "address": "Angle rue de Marseille",
+        "latitude": 45.750945,
+        "longitude": 4.83927
+    },
+    {
+        "number": 10120,
+        "name": "10120 - SALENGRO / DESCARTES",
+        "address": "41 AV. ROGER SALENGRO (VILLEURBANNE)",
+        "latitude": 45.776239,
+        "longitude": 4.871634
+    },
+    {
+        "number": 5016,
+        "name": "5016 - POINT DU JOUR / GRANGES",
+        "address": "Devant la mairie du 5°",
+        "latitude": 45.756204,
+        "longitude": 4.802727
+    },
+    {
+        "number": 9013,
+        "name": "9013 - QUAI PAUL SÉDALLIAN",
+        "address": "Angle rue de la Navigation",
+        "latitude": 45.787522,
+        "longitude": 4.814418
+    },
+    {
+        "number": 10028,
+        "name": "10028 - ECOLE DE MUSIQUE",
+        "address": "Cours de la République/Angle Anatole France",
+        "latitude": 45.767467,
+        "longitude": 4.874032
+    },
+    {
+        "number": 6041,
+        "name": "6041 - CITÉ INTERNATIONALE / TÊTE D'OR NORD",
+        "address": "50 QUAI ACHILLE LIGNON",
+        "latitude": 45.78458,
+        "longitude": 4.859664
+    },
+    {
+        "number": 15002,
+        "name": "15002 - ST PRIEST - CITE BERLIET",
+        "address": "",
+        "latitude": 45.70597,
+        "longitude": 4.900886
+    },
+    {
+        "number": 10005,
+        "name": "10005 - 11 NOVEMBRE",
+        "address": "Face Entrée du Parc de la Tête d'Or**",
+        "latitude": 45.779702,
+        "longitude": 4.860029
+    },
+    {
+        "number": 4012,
+        "name": "4012 - PLACE ADRIEN GODIEN",
+        "address": "Angle montée de la Boucle",
+        "latitude": 45.778767,
+        "longitude": 4.841109
+    },
+    {
+        "number": 11004,
+        "name": "11004 - CALUIRE - BRANLY / PASTEUR",
+        "address": "",
+        "latitude": 45.79169,
+        "longitude": 4.843452
+    }
+]

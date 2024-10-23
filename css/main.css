@@ -1,0 +1,16 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+html,
+body {
+    min-height: 95svh;
+}
+main {
+    /* height: fit-content; */
+}
+#map {
+    height: 100%;
+    width: 100%;
+    background-color: lightcoral;
+}
