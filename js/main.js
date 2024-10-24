@@ -1,13 +1,23 @@
-// fetch('./../lyon.json')
 const api_key = '6d075f6b7a29ddc64d3ffe3d08b2dad7e518ad30';
-const contract_name = 'lyon';
+let contract_name = 'lyon';
 
-fetch(
-    `https://api.jcdecaux.com/vls/v1/stations?contract=${contract_name}&apiKey=${api_key}`
-)
-    .then((response) => response.json())
-    .then((data) => afficheMarkers(data));
+fetchData(contract_name);
 
+function fetchData(city_name) {
+    // fetch('./../lyon.json')
+    console.log(city_name);
+    fetch(
+        `https://api.jcdecaux.com/vls/v1/stations?contract=${city_name}&apiKey=${api_key}`
+    )
+        .then((response) => response.json())
+        .then((data) => afficheMarkers(data));
+}
+
+document.querySelector('form').addEventListener('submit', (event) => {
+    console.log('event');
+    event.preventDefault();
+    fetchData(document.querySelector('#city-name').value);
+});
 let markers = [];
 
 let map = L.map('map').setView([45.743317, 4.815747], 13);
@@ -37,7 +47,6 @@ var redIcon = new L.Icon({
     shadowSize: [41, 41],
 });
 function createMarker(marker) {
-    console.log(marker);
     const markerLeaflet = L.marker(
         [marker.position.lat, marker.position.lng],
         marker.status === 'OPEN' ? { icon: greenIcon } : { icon: redIcon }
@@ -55,7 +64,20 @@ function createMarker(marker) {
 }
 
 function afficheMarkers(data) {
+    console.log('afficheMarkers');
     console.log(data);
+    markers.forEach((marker) => map.removeLayer(marker));
     markers = data.map((marker) => createMarker(marker));
+    const meanLat =
+        markers
+            .map((marker) => marker._latlng.lat)
+            // .map((marker) => typeof marker.lat)
+            .reduce((sumlat, lat) => lat + sumlat) / markers.length;
+    const meanLng =
+        markers
+            .map((marker) => marker._latlng.lng)
+            // .map((marker) => typeof marker.lat)
+            .reduce((sumlat, lat) => lat + sumlat) / markers.length;
+    map.setView([meanLat, meanLng], 13);
     console.log(markers);
 }
