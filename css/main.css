@@ -2,9 +2,12 @@ body {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+* {
+    margin: 0;
+}
 html,
 body {
-    min-height: 95svh;
+    min-height: 100svh;
 }
 main {
     /* height: fit-content; */
